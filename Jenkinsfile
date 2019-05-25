@@ -44,6 +44,11 @@ pipeline {
                 }
             }
         }
+        stage("Finish") {
+            steps {
+                sh 'echo "Finish"'
+            }
+        }
     }
 }
 /*
