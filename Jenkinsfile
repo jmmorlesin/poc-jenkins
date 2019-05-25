@@ -22,6 +22,7 @@ pipeline {
                     agent any
                     steps {
                         sh 'echo "Parallel Step 1"'
+                        sh 'sleep 20s'
                     }
                     post {
                         always {
@@ -33,6 +34,7 @@ pipeline {
                     agent any
                     steps {
                         sh 'echo "Parallel Step 2"'
+                        sh 'sleep 20s'
                     }
                     post {
                         always {
