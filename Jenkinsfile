@@ -22,7 +22,7 @@ pipeline {
                     agent any
                     steps {
                         sh 'echo "Parallel Step 1"'
-                        sh 'env'
+                        sh 'echo "Executor number: $EXECUTOR_NUMBER"'
                         sh 'sleep 20s'
                     }
                     post {
@@ -35,7 +35,7 @@ pipeline {
                     agent any
                     steps {
                         sh 'echo "Parallel Step 2"'
-                        sh 'env'
+                        sh 'echo "Executor number: $EXECUTOR_NUMBER"'
                         sh 'sleep 20s'
                     }
                     post {
