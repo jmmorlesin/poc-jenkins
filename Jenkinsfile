@@ -19,7 +19,7 @@ pipeline {
         stage('Parallel Block') {
             parallel {
                 stage('Parallel 1') {
-                    agent any
+//                    agent any
                     steps {
                         sh 'echo "Parallel Step 1"'
                         sh 'echo "Executor number: $EXECUTOR_NUMBER"'
@@ -32,7 +32,7 @@ pipeline {
                     }
                 }
                 stage('Parallel 2') {
-                    agent any
+//                    agent any
                     steps {
                         sh 'echo "Parallel Step 2"'
                         sh 'echo "Executor number: $EXECUTOR_NUMBER"'
